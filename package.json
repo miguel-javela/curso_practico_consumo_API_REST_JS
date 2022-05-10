@@ -1,0 +1,24 @@
+{
+  "name": "curso_practico_consumo_api_rest_js",
+  "version": "1.0.0",
+  "description": "Curso Práctico de Consumo de API REST con JavaScript",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/miguel-javela/curso_practico_consumo_API_REST_JS.git"
+  },
+  "keywords": [
+    "JavaScript",
+    "API",
+    "REST"
+  ],
+  "author": "miguel javela <migueljavela2014@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/miguel-javela/curso_practico_consumo_API_REST_JS/issues"
+  },
+  "homepage": "https://github.com/miguel-javela/curso_practico_consumo_API_REST_JS#readme"
+}
