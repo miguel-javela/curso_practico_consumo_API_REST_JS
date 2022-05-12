@@ -1,12 +1,9 @@
 const api = axios.create({
     baseURL: 'https://api.themoviedb.org/3/',
-    headers:{
-        'Content-Type': 'application/json;charset=utf-8'
-    },
-    params: {
-        'api_key': API_KEY
-    }
+    headers:{'Content-Type': 'application/json;charset=utf-8'},
+    params: {'api_key': API_KEY}
 });
+
 
 async function getTrendingMoviesPreview(){
     const {data} = await api('trending/movie/day');
@@ -25,7 +22,6 @@ async function getTrendingMoviesPreview(){
 
         movieContainer.appendChild(movieImg);
         trendingPreviewMoviesContainer.appendChild(movieContainer);
-        
     })
 }
 
@@ -41,16 +37,15 @@ async function getCategoriesPreview(){
         categoryContainer.classList.add('category-container');
 
         const categoryTitle = document.createElement('h3');
-        categoryTitle.classList.add('category-title')
+        categoryTitle.classList.add('category-title');
         categoryTitle.setAttribute('id','id'+category.id);
-        const categoryTitleText = document.createTextNode(category.name)
+        const categoryTitleText = document.createTextNode(category.name);
 
         categoryTitle.appendChild(categoryTitleText);
         categoryContainer.appendChild(categoryTitle);
-        PreviewCategoriesContainer.appendChild(categoryContainer)
-        
+        PreviewCategoriesContainer.appendChild(categoryContainer);
     })
 }
 
-getTrendingMoviesPreview();
-getCategoriesPreview();
+//getTrendingMoviesPreview();
+//getCategoriesPreview();
