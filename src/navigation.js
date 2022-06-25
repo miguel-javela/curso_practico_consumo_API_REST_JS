@@ -21,7 +21,7 @@ window.addEventListener('hashchange',navigator,false);
 window.addEventListener('scroll',infiniteScroll,false);
 
 function navigator(){
-    console.log({location})
+    console.log('location br',location.hash)
     if(infiniteScroll){
         window.removeEventListener('scroll',infiniteScroll, {passive: false});
         infiniteScroll = undefined;

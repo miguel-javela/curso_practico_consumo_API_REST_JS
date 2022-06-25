@@ -26,6 +26,10 @@ function likeMovie(movie){
         likedMovies[movie.id] = movie;
     }
     localStorage.setItem('liked_movies',JSON.stringify(likedMovies))
+    if (location.hash == ''){
+        console.log('location likemovie',location.hash)
+        homePage();
+      }
 }
 
 //utils
