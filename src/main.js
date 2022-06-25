@@ -69,6 +69,7 @@ function createMovies(
 
         const movieBtn = document.createElement('button');
         movieBtn.classList.add('movie-btn');
+        likedMoviesList()[movie.id] && movieBtn.classList.add('movie-btn--liked')
         movieBtn.addEventListener('click', () => {
             movieBtn.classList.toggle('movie-btn--liked');
             likeMovie(movie);
@@ -234,3 +235,9 @@ async function getRelatedMoviesId(id){
     createMovies(relatedMovies,relatedMoviesContainer);
 
 }
+
+function getLikedMovies(){
+    const likedMovies = likedMoviesList();
+    moviesArray = Object.values(likedMovies);
+    createMovies(moviesArray,likedMoviesListArticle,{lazyLoad: true, clean: true});
+};

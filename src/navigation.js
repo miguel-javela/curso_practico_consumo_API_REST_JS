@@ -52,17 +52,20 @@ function homePage (){
     headerSection.classList.remove('header-container--long');
     headerSection.style.background = '';
     arrowBtn.classList.add('inactive');
+    arrowBtn.classList.remove('header-arrow--white');
     headerTitle.classList.remove('inactive')
     headerCategoryTitle.classList.add('inactive');
     searchForm.classList.remove('inactive');
 
     trendingPreviewSection.classList.remove('inactive');
     categoriesPreviewSection.classList.remove('inactive');
+    LikedMoviesSection.classList.remove('inactive');
     genericSection.classList.add('inactive');
     movieDetailSection.classList.add('inactive');
 
     getTrendingMoviesPreview();
-    getCategoriesPreview(); 
+    getCategoriesPreview();
+    getLikedMovies();
 }
 
 function categoriesPage (){
@@ -78,6 +81,7 @@ function categoriesPage (){
 
     trendingPreviewSection.classList.add('inactive');
     categoriesPreviewSection.classList.add('inactive');
+    LikedMoviesSection.classList.add('inactive');
     genericSection.classList.remove('inactive');
     movieDetailSection.classList.remove('inactive');
 
@@ -102,6 +106,7 @@ function movieDetailsPage (){
 
     trendingPreviewSection.classList.add('inactive');
     categoriesPreviewSection.classList.add('inactive');
+    LikedMoviesSection.classList.add('inactive');
     genericSection.classList.add('inactive');
     movieDetailSection.classList.remove('inactive');
 
@@ -122,6 +127,7 @@ function searchPage (){
 
     trendingPreviewSection.classList.add('inactive');
     categoriesPreviewSection.classList.add('inactive');
+    LikedMoviesSection.classList.add('inactive');
     genericSection.classList.remove('inactive');
     movieDetailSection.classList.remove('inactive');
 
@@ -143,6 +149,7 @@ function trendsPage (){
 
     trendingPreviewSection.classList.add('inactive');
     categoriesPreviewSection.classList.add('inactive');
+    LikedMoviesSection.classList.add('inactive');
     genericSection.classList.remove('inactive');
     movieDetailSection.classList.remove('inactive');
 
