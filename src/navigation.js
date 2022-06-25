@@ -16,11 +16,11 @@ arrowBtn.addEventListener('click', () =>{
     //location.hash = '#home'
 })
 
-window.addEventListener('DOMContentLoaded',navigator,false);
-window.addEventListener('hashchange',navigator,false);
+window.addEventListener('DOMContentLoaded',navigator1,false);
+window.addEventListener('hashchange',navigator1,false);
 window.addEventListener('scroll',infiniteScroll,false);
 
-function navigator(){
+function navigator1(){
     console.log('location br',location.hash)
     if(infiniteScroll){
         window.removeEventListener('scroll',infiniteScroll, {passive: false});
